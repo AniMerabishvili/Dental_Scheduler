@@ -1,0 +1,58 @@
+
+  <div class="addFormDiv">
+    
+    <div class="addPatienttitle"> პაციენტის რეგისტრაციის ფორმა </div>
+    <div class="namediv">
+      <div class="name">
+        <label for="name">პაციენტის სახელი: </label>
+        <input type="text" [(ngModel)]="patientName" placeholder="პაციენტის სახელი"/>
+      </div>
+      <div class="name">
+        <label for="name">პაციენტის გვარი: </label>
+        <input type="text" placeholder="პაციენტის გვარი"/>
+      </div>
+    </div>
+    <div class="namediv">
+      <div class="name">
+        <label for="gender">სქესი </label>
+        <div>
+          <input type="radio" name="gender" value="female"/>
+          <label for="gender"> მდედრობითი </label>
+          <input type="radio" name="gender" value="male"/>
+          <label for="gender"> მამრობითი </label>
+        </div>
+      </div>
+      <div class="name">
+        <label for="birthDate">დაბადების თარიღი: </label>
+        <input type="date" placeholder="დაბადების თარიღი წელი/თვე/დღე"/>
+      </div>
+    </div>
+    <div class="name">
+      <label for="name">პირადი ნომერი: </label>
+      <input type="text" placeholder="პირადი ნომერი"/>
+      <div class="namediv namediv1">
+        <div class="name">
+          <label for="name">ტელეფონის ნომერი (ძირითადი): </label>
+          <input type="text" placeholder="ტელეფონის ნომერი (ძირითადი):"/>
+        </div>
+        <div class="name">
+          <label for="name">ტელეფონის ნომერი </label>
+          <input type="text" placeholder="ტელეფონის ნომერი"/>
+        </div>
+      </div>
+      <div class="namediv namediv1">
+        <div class="name">
+          <label for="name">ელექტრონული ფოსტა </label>
+          <input type="text" placeholder="ელექტრონული ფოსტა"/>
+        </div>
+        <div class="name">
+          <label for="name">საცხოვრებელი მისამართი </label>
+          <input type="text" placeholder="საცხოვრებელი მისამართი"/>
+        </div>
+      </div>
+    </div>
+    <div class="buttonsdiv">
+      <button class="cancel" (click)="onCancel()">Cancel</button>
+      <button class="saveChanges" (click)="onSaveChanges()">Save Changes</button>
+    </div>
+    </div>

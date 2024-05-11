@@ -1,0 +1,22 @@
+
+
+.homediv {
+    width: 100px;
+    height: 100px;
+    background-color: #334EAC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.homediv:hover {
+    background-color: rgba(255, 255, 255, 0.194);
+    border: 1px solid #334EAC;
+    transition-duration: 0.5s;
+    color: #334EAC;
+}
+.main {
+    display: flex;
+    column-gap: 5px;
+}

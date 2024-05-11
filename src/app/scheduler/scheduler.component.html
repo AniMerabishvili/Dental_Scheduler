@@ -1,0 +1,65 @@
+<ejs-schedule #scheduleObj [eventSettings]="eventSettings" (eventRendered)="onEventRendered($event)" (popupOpen)="onPopupOpen($event)" [showQuickInfo]="showQuickInfo" (cellClick)="onCellClick($event)" (eventClick)="onEventClick($event)">
+  <e-views>
+    <e-view option="Day" startHour="08:00" endHour="22:00"></e-view>
+    <e-view option="Week" isSelected="true" startHour="08:00" endHour="20:00"></e-view>
+    <e-view option="Month" showWeekNumber="true"></e-view>
+    <e-view option="Agenda"></e-view>
+    <e-view option="TimelineDay"></e-view>
+  </e-views>
+<ng-template #editorTemplate let-data>
+    <table *ngIf="!showAddForm" class="headerdiv custom-event-editor">
+      <label for="name">Name:</label>
+      <input id="Subject" class="e-field e-input" type="text" value="" name="Name" style="width: 100%" />
+      <div>
+        <h4>Visit Appointment</h4>
+        <p>Date:</p>
+      </div>
+      <div class="visits">
+        <div class="visitsdiv1">
+          <img src="../../assets/add(2).png" alt="" class="img1">
+          <p>Visit Appointment</p>
+        </div>
+        <div class="visitsdiv2">
+          <img src="../../assets/add(2).png" alt="" class="img1">
+          <p>Visit Appointment</p>
+        </div>
+      </div>
+      <div>
+        <p>Search for a patient or add a new one</p>
+        <div class="parent">
+          <select name="patients" id="patients" class="patients" [(ngModel)]="selectedPatient">
+            <option *ngFor="let patient of patients" [value]="patient">{{ patient }}</option>
+          </select>          
+          <button id="addUserButton">
+            <img src="../../assets/add-group.png" alt="users" class="img" (click)="onClick()">
+          </button>
+        </div>
+        <div class="patientprofile">
+          <img class="userproficon" src="../../assets/profile-user.png" alt="user">
+          <div class="patieninfo">
+            <p class="patieninfoP1">Patient</p>
+            <p class="patieninfoP2">{{ selectedPatient }}</p>
+          </div>          
+        </div>
+        <p> A visit is scheduled to the doctor </p>
+        <div class="patientprofile">
+          <img class="userproficon" src="../../assets/profile-user.png" alt="user">
+          <div class="patieninfo">
+            <p class="patieninfoP1"> doctor </p>
+            <p class="patieninfoP2"> Ani Merabishvili </p>
+          </div>
+        </div>
+        <p> ვიზიტის მიზანი </p>
+        <select name="" id="" class="patients select1">
+          <option value=""> visit goal </option>
+        </select>
+        <p> შენიშვნა ან კომენტარი </p>
+          <input type="text" placeholder="your comment" class="patients select1 input1">
+      </div>
+
+    </table>
+    <app-add-User *ngIf="showAddForm" (close)="onClose($event)"></app-add-User>
+  
+    
+  </ng-template> 
+</ejs-schedule>

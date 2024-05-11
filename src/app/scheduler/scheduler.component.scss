@@ -1,0 +1,80 @@
+.custom-editor {
+    padding: 20px;
+}
+.headerdiv {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.img1 {
+    width: 20px;
+    margin-right: 5px;
+}
+.visitsdiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 2px solid rgb(0, 54, 0);
+    width: 40%;
+    border-radius: 10px;
+    
+}
+.visitsdiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 2px solid rgb(170, 170, 170);
+    width: 40%;
+    border-radius: 10px;   
+}
+.visits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.patients {
+    width: 85%;
+    background-color: transparent;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.parent {
+    display:  flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.patientprofile {
+    display: flex;
+    align-items: center;
+}
+.userproficon {
+    height: 50px;
+    margin-right: 10px;
+}
+.patieninfoP1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.patieninfoP2 {
+    font-size: 16px;
+    margin-top: 0px;
+}
+.patientprofile {
+    border: solid 0.1px rgb(212, 212, 212);
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.select1 {
+    width: 100%;
+}
+.input1 {
+    width: 95%;
+    margin-bottom: 5px;
+}
+

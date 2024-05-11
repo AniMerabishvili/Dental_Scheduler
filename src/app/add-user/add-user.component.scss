@@ -1,0 +1,71 @@
+
+.addFormDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+}
+.addPatienttitle {
+    border-bottom: 1px solid rgb(194, 194, 194);
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.buttonsdiv {
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+}
+.saveChanges {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+.cancel {
+    background-color: rgb(193, 193, 193);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+input {
+    background-color: transparent;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 10px;
+    border-radius: 5px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.namediv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+.namediv div {
+    width: 100%;
+}
+.label {
+    margin-top: 5px;
+}
+.headerdiv {
+    width: 100%;
+}
+.aninini {
+    display: flex;
+    justify-content: space-between;
+}
+.aninini div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.namediv1 {
+    margin-top: 10px;
+}
